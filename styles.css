@@ -1,0 +1,115 @@
+/* Base styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Styles for the form */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the input field */
+#keyword {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 300px;
+}
+
+/* Styles for the submit button */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid #28a745;
+    border-radius: 0 4px 4px 0;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+    background-color: #218838;
+}
+
+/* Styles for the loading indicator */
+#loading {
+    font-size: 1.2em;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Hidden class to hide the loading indicator */
+.hidden {
+    display: none;
+}
+
+/* Styles for the results container */
+#results {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styles for each product card */
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for each product card */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the product image */
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Styles for the product title */
+.product h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styles for the product details */
+.product p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
